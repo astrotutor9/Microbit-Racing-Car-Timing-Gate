@@ -1,6 +1,7 @@
 # Microbit-Racing-Car-Timing-Gate
 Create a speed trap for toy cars with three Microbits, torches, radio and REPL in Python.
 
+![3D printed timing gate]https://github.com/astrotutor9/Microbit-Racing-Car-Timing-Gate/blob/master/MicroBit_Start_Gate.jpg
 
 The aim of this exercise is to find the fastest toy car by timing it over a set distance.
 
@@ -83,6 +84,8 @@ while True:
 ```
 
 Here there is another forever loop in the code continually reading the light level falling onto the Microbit LED and sending it out by radio. The program then waits a second before doing it again and again. The light_level variable name (note that it is sensibly named) is sent as a string (str) of text not a number. The Microbit radio only sends letters (text) not mathematical numbers. The value sent over radio is not a number you can do maths with, unless it is reconverted back into a number (integer).
+
+![Masked Microbit]https://github.com/astrotutor9/Microbit-Racing-Car-Timing-Gate/blob/master/Microbit_masked.jpg
 
 Flash the code and disconnect the the Microbit. Stick a piece of tape or Blutac over the LED on the front leaving just the left side clear. This makes for a nice sharp timing gate. Tape the Microbit to the side of the track and place a torch across from it shining onto the LED. Plug in the battery pack.
 
@@ -169,5 +172,9 @@ while True:
 ```
 
 Once the stop message has been received the calculation is made. First the time difference is calculated. Then the speed is the distance travelled between the two gates in metres divided by the time difference between the two gates in milliseconds and then all multiplied by 1000 to convert milliseconds per metre to seconds per metre. And the result is printed.  
+
+Here is an example of the timing achieved on the REPL.
+
+![Screen grab from the Mu REPL]https://github.com/astrotutor9/Microbit-Racing-Car-Timing-Gate/blob/master/Mu_screen.jpg
 
 So which of your cars is the fastest, or slowest!
